@@ -1,0 +1,25 @@
+This project has some examples to test langchain. To use it just run "yarn install" and create a .env file.
+To copy the .env.example file to .env, you can use the cp command in the terminal or command prompt, depending on your operating system.
+
+On Unix-based systems (like Linux or macOS), use the following command:
+"cp .env.example .env"
+
+On Windows, use the following command:
+"copy .env.example .env"
+
+YOU WILL NEED NODE VERSION 18!
+
+then put in your own keys. The keys can be found in the following places:
+
+https://platform.openai.com/account/api-keys
+OPENAI_API_KEY="sk-..."
+
+https://console.cloud.google.com/projectselector2/apis/credentials?_ga=2.257442818.886653913.1688468981-1560123194.1688468931&supportedpurview=project
+on the above link you have to create a new project and then go on the button above that says "Anmeldedaten Erstellen"
+GOOGLE_API_KEY="..."
+
+https://programmablesearchengine.google.com/controlpanel/create
+GOOGLE_CSE_ID="..."
+
+to use the base examples that don´t use agents you only need the OPENAI_API_KEY. 
+When you are ready run "node scr/basic" to run the first example.
